@@ -21,7 +21,8 @@ function Header() {
     { name: 'home', path: '/' },
     { name: "resume", path: '/resume' },
     { name: 'works', path: '/works' },
-    { name: 'contact', path: '/contact' }
+    { name: 'contact', path: '/contact' },
+    { name: 'clock', path:'/clock'}
   ]
 
   return (
