@@ -6,6 +6,7 @@ import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 import { Toaster } from 'react-hot-toast'
 import Works from './pages/Works'
+import Clock from './components/Clock'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/resume' element={<Resume />} />
           <Route path='/works' element={<Works/> } />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/clock' element={<Clock/>}/>
           
         </Routes>
       </main>
