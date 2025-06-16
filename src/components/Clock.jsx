@@ -24,8 +24,15 @@ function Clock() {
   const minutes = time.getMinutes().toString().padStart(2, "0");
   const seconds = time.getSeconds().toString().padStart(2, "0");
 
-  return (
-    <div className="fixed top-0 bottom-0 right-0 left-0 z-[9999] bg-[#C7C7C7] flex gap-6  text-center text-gray-700 font-semibold justify-center items-baseline pt-[40vh]">
+  return (<>
+  <div className="fixed top-0 bottom-0 right-0 left-0 z-[9999] bg-[#C7C7C7] flex gap-6  text-center text-gray-700 font-semibold justify-center items-baseline pt-[40vh]">
+  <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 left-4">
+            <FaTimes/>
+            Back</Link>
+    <p>This clock is not responsive from small screens </p>
+    </div>
+  
+    <div className="hidden fixed top-0 bottom-0 right-0 left-0 z-[9999] bg-[#C7C7C7] md:flex gap-6  text-center text-gray-700 font-semibold justify-center items-baseline pt-[40vh]">
         <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 left-4">
             <FaTimes/>
             Back</Link>
@@ -108,7 +115,7 @@ function Clock() {
       {/* Seconds with scroll animation */}
       <div className="flex gap-4 py-4 relative">
         {/* Second - 1 */}
-        <motion.div className="ss w-12 h-fit overflow-hidden"  animate={{ y: -parseInt(seconds[0]) * digitHeight }}
+        <motion.div className="ss w-12 h-fit overflow-hidden relative"  animate={{ y: -parseInt(seconds[0]) * digitHeight }}
             transition={{ type: "tween", duration: 0.3 }}>
           <motion.ul
            
@@ -152,6 +159,13 @@ function Clock() {
         })}
       </span>
     </div>
+
+
+
+
+
+
+    </>
   );
 }
 
