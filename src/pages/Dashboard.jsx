@@ -29,28 +29,28 @@ function Dashboard() {
             icon: (
                 <FaLinkedin className="text-[#0A66C2] hover:text-[#004182] transition-colors duration-200" />
             ),
-            url: 'https://www.linkedin.com/in/your-profile',
+            url: 'https://www.linkedin.com/in/amarjeet-mistri-84b28a24b/',
         },
         {
             name: 'GitHub',
             icon: (
                 <FaGithub className="text-[#333] hover:text-white transition-colors duration-200" />
             ),
-            url: 'https://github.com/your-profile',
+            url: 'https://github.com/TCF-Amar',
         },
         {
             name: 'Instagram',
             icon: (
                 <FaInstagram className="text-[#E1306C] hover:text-[#C13584] transition-colors duration-200" />
             ),
-            url: 'https://www.instagram.com/your-profile',
+            url: '#',
         },
         {
             name: 'Twitter',
             icon: (
                 <FaTwitter className="text-[#1DA1F2] hover:text-[#0d8ddb] transition-colors duration-200" />
             ),
-            url: 'https://twitter.com/your-profile',
+            url: '#',
         },
       ];
 
