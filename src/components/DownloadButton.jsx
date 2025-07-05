@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaDownload } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import resume from '../assets/Resume (1).pdf'
+import resume from '../assets/resume.pdf'
 
 function DownloadButton() {
     return (
