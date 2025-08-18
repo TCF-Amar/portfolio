@@ -5,12 +5,14 @@ import { motion } from 'framer-motion'
 
 function Contact() {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
 
-    const handleEmailSend = (e) => {
+    const handleEmailSend = async(e) => {
         e.preventDefault();
 
-        sendEmail(form)
-
+        setLoading(true);
+        await sendEmail(form)
+        setLoading(false);
     }
 
 
@@ -106,7 +108,7 @@ function Contact() {
                                 type='submit'
                                 className='bg-[#00ff99] text-black/60 text-sm px-6 py-2 rounded-full font-semibold hover:bg-[#00cc77] transition-all'
                             >
-                                Send Message
+                                {loading ? "Sending..." : "Send Message"}
                             </button>
                         </div>
 

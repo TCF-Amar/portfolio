@@ -26,16 +26,16 @@ function Clock() {
 
   return (<>
   <div className="fixed top-0 bottom-0 right-0 left-0 z-[9999] bg-[#C7C7C7] flex gap-6  text-center text-gray-700 font-semibold justify-center items-baseline pt-[40vh]">
-  <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 left-4">
+  <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 right-4">
             <FaTimes/>
-            Back</Link>
+            Close</Link>
     <p>This clock is not responsive from small screens </p>
     </div>
   
     <div className="hidden fixed top-0 bottom-0 right-0 left-0 z-[9999] bg-[#C7C7C7] md:flex gap-6  text-center text-gray-700 font-semibold justify-center items-baseline pt-[40vh]">
-        <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 left-4">
+        <Link to="/" className="fixed flex gap-1 text-gray-700 cursor-pointer hover:text-gray-500 items-center top-4 right-4">
             <FaTimes/>
-            Back</Link>
+            Close</Link>
       {/* Hours */}
       <div className="flex gap-4 relative">
       <motion.div className="ss w-12 h-fit overflow-hidden relative"  animate={{ y: -parseInt(formattedHours[0]) * digitHeight }}
