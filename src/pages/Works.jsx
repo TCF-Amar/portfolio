@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { FaGithub, FaArrowUpRightFromSquare, FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
-import image1 from "../assets/image1.jpg"// अभी इसी को placeholder image बना देते हैं
-import image2 from "../assets/image2.jpg"// अभी इसी को placeholder image बना देते हैं
+import image1 from "../assets/image1.jpg"
+import image2 from "../assets/image2.jpg"
+import image3 from "../assets/image3.jpg"
 
 const Works = () => {
     const projects = [
         {
             id: 1,
-            project_name: "E-Commerce Website",
+            project_name: "E-Commerce Website (static website)",
             project_img: image1,
-            description: "A full-stack shopping website with user authentication, add-to-cart, payment gateway, and admin dashboard.",
-            tech: "React.js, Zustand, Firebase, Tailwind CSS",
-            live: "https://ecomm-nine-brown.vercel.app/",
-            github: "https://github.com/TCF-Amar/ecomm"
+            description: "A frontend based e-commerce website with product listings, shopping cart. ",
+            tech: "React.js, Zustand, Tailwind CSS",
+            live: "https://myshop-eight-green.vercel.app/",
         },
       
         {
@@ -23,8 +23,18 @@ const Works = () => {
             description: "Real-time weather forecasting app using OpenWeather API and location-based search.",
             tech: "React, API Integration, Tailwind CSS",
             live: "https://check-weather-blush.vercel.app/",
-            github: "https://github.com/TCF-Amar/Check-Weather"
+            // github: "https://github.com/TCF-Amar/Check-Weather"
         },
+        {
+            id: 3,
+            project_name: "Real-time Chat Application",
+            project_img: image3,
+            description: "A web-based chat application with real-time messaging and user presence indicators.",
+            tech: "React.js, Socket.io, Node.js, Express, Tailwind CSS",
+            live: "https://rt-chat-79zw.vercel.app",
+            // github: "https://github.com/TCF-Amar/Chat-App"
+        },
+
     
   
     ];
@@ -81,10 +91,16 @@ const Works = () => {
                         className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition">
                         <FaArrowUpRightFromSquare />
                     </a>
-                    <a href={currentProject.github} target="_blank" rel="noopener noreferrer"
-                        className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition">
-                        <FaGithub />
-                    </a>
+                   
+                    {
+                        currentProject.github && (
+                            <a href={currentProject.github} target="_blank" rel="noopener noreferrer"
+                                className={`p-3 bg-white/10 rounded-full hover:bg-white/20 transition `}>
+                                <FaGithub />
+                            </a>
+                        )
+                    }
+                  
                 </div>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { sendEmail } from '../lib/sendEmail';
 import { motion } from 'framer-motion'
@@ -17,6 +17,7 @@ function Contact() {
 
 
     return (
+        //   fdjgh
         <div className='flex flex-col-reverse md:flex-row gap-6 mt-30 px-4'>
             {/* Contact Form */}
             <motion.div
