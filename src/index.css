@@ -12,6 +12,7 @@
     &:focus{
         border: #00ff99;
     }
+    
 
     
 }
@@ -22,8 +23,13 @@
                  5px -5px 7px #ffffff;
 }
 
+<<<<<<< HEAD
 
 .asdasd{
     position: absolute;
+=======
+.sss{
+    dispaly:flex;
+>>>>>>> daf0ea7865438829af5aa47b34ddec04d87a491f
 }
 
